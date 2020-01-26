@@ -1,0 +1,96 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <Blueprints>
+        <Blueprint>
+            <Id>
+                <TypeId>BlueprintDefinition</TypeId>
+                <SubtypeId>Tech2x</SubtypeId>
+            </Id>
+            <DisplayName>Common Tech</DisplayName>
+            <Icon>Textures\tech2x.dds</Icon>
+            <Prerequisites>
+                <Item Amount="45" TypeId="Ingot" SubtypeId="Iron"/>
+                <Item Amount="40" TypeId="Ingot" SubtypeId="Silicon"/>
+                <Item Amount="16" TypeId="Ingot" SubtypeId="Cobalt"/>
+                <Item Amount="12" TypeId="Ingot" SubtypeId="Silver"/>
+                <Item Amount="8" TypeId="Ingot" SubtypeId="Gold"/>
+            </Prerequisites>
+            <Result Amount="1" TypeId="Component" SubtypeId="Tech2x"/>
+            <BaseProductionTimeInSeconds>3000</BaseProductionTimeInSeconds>
+        </Blueprint>
+        <Blueprint>
+            <Id>
+                <TypeId>BlueprintDefinition</TypeId>
+                <SubtypeId>TechA4x</SubtypeId>
+            </Id>
+            <DisplayName>Rare Tech Generator</DisplayName>
+            <Icon>Textures\GUI\Icons\component\small_tube_component.dds</Icon>
+            <Prerequisites>
+                <Item Amount="80" TypeId="Ingot" SubtypeId="Iron"/>
+                <Item Amount="60" TypeId="Ingot" SubtypeId="Silicon"/>
+                <Item Amount="24" TypeId="Ingot" SubtypeId="Cobalt"/>
+                <Item Amount="18" TypeId="Ingot" SubtypeId="Silver"/>
+                <Item Amount="10" TypeId="Ingot" SubtypeId="Gold"/>
+                <Item Amount="2" TypeId="Ingot" SubtypeId="Uranium"/>
+            </Prerequisites>
+            <Result Amount="1" TypeId="Component" SubtypeId="TechA4x"/>
+            <BaseProductionTimeInSeconds>6000</BaseProductionTimeInSeconds>
+        </Blueprint>
+        <Blueprint>
+            <Id>
+                <TypeId>BlueprintDefinition</TypeId>
+                <SubtypeId>TechB4x</SubtypeId>
+            </Id>
+            <DisplayName>Rare Tech Capacitor</DisplayName>
+            <Icon>Textures\GUI\Icons\component\large_tube_component.dds</Icon>
+            <Prerequisites>
+                <Item Amount="80" TypeId="Ingot" SubtypeId="Iron"/>
+                <Item Amount="60" TypeId="Ingot" SubtypeId="Silicon"/>
+                <Item Amount="24" TypeId="Ingot" SubtypeId="Cobalt"/>
+                <Item Amount="18" TypeId="Ingot" SubtypeId="Silver"/>
+                <Item Amount="10" TypeId="Ingot" SubtypeId="Gold"/>
+                <Item Amount="2" TypeId="Ingot" SubtypeId="Uranium"/>
+            </Prerequisites>
+            <Result Amount="1" TypeId="Component" SubtypeId="TechB4x"/>
+            <BaseProductionTimeInSeconds>6000</BaseProductionTimeInSeconds>
+        </Blueprint>
+        <Blueprint>
+            <Id>
+                <TypeId>BlueprintDefinition</TypeId>
+                <SubtypeId>TechA8x</SubtypeId>
+            </Id>
+            <DisplayName>Exotic Tech Generator</DisplayName>
+            <Icon>Textures\GUI\Icons\component\small_tube_component.dds</Icon>
+            <Prerequisites>
+                <Item Amount="120" TypeId="Ingot" SubtypeId="Iron"/>
+                <Item Amount="90" TypeId="Ingot" SubtypeId="Silicon"/>
+                <Item Amount="36" TypeId="Ingot" SubtypeId="Cobalt"/>
+                <Item Amount="25" TypeId="Ingot" SubtypeId="Silver"/>
+                <Item Amount="16" TypeId="Ingot" SubtypeId="Gold"/>
+                <Item Amount="4" TypeId="Ingot" SubtypeId="Uranium"/>
+                <Item Amount="1" TypeId="Ingot" SubtypeId="Platinum"/>
+            </Prerequisites>
+            <Result Amount="1" TypeId="Component" SubtypeId="TechA8x"/>
+            <BaseProductionTimeInSeconds>9000</BaseProductionTimeInSeconds>
+        </Blueprint>
+        <Blueprint>
+            <Id>
+                <TypeId>BlueprintDefinition</TypeId>
+                <SubtypeId>TechB8x</SubtypeId>
+            </Id>
+            <DisplayName>Exotic Tech Capacitor</DisplayName>
+            <Icon>Textures\GUI\Icons\component\large_tube_component.dds</Icon>
+            <Prerequisites>
+                <Item Amount="120" TypeId="Ingot" SubtypeId="Iron"/>
+                <Item Amount="90" TypeId="Ingot" SubtypeId="Silicon"/>
+                <Item Amount="36" TypeId="Ingot" SubtypeId="Cobalt"/>
+                <Item Amount="25" TypeId="Ingot" SubtypeId="Silver"/>
+                <Item Amount="16" TypeId="Ingot" SubtypeId="Gold"/>
+                <Item Amount="4" TypeId="Ingot" SubtypeId="Uranium"/>
+                <Item Amount="1" TypeId="Ingot" SubtypeId="Platinum"/>
+            </Prerequisites>
+            <Result Amount="1" TypeId="Component" SubtypeId="TechB8x"/>
+            <BaseProductionTimeInSeconds>9000</BaseProductionTimeInSeconds>
+        </Blueprint>
+    </Blueprints>
+</Definitions>

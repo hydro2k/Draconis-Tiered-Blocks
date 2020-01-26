@@ -1,0 +1,333 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <CubeBlocks>
+        <!--        Tier 2-->
+        <!--Small Gyro-->
+        <Definition xsi:type="MyObjectBuilder_GyroDefinition">
+            <Id>
+                <TypeId>Gyro</TypeId>
+                <SubtypeId>SmallBlockGyro2x</SubtypeId>
+            </Id>
+            <DisplayName>Enhanced Gyroscope</DisplayName>
+            <GuiVisible>false</GuiVisible>
+            <Icon>Textures\gyro2x.dds</Icon>
+            <Description>Description_Gyroscope</Description>
+            <CubeSize>Small</CubeSize>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="1" y="1" z="1"/>
+            <ModelOffset x="0" y="0" z="0"/>
+            <Model>Models\Cubes\Small\gyroscope.mwm</Model>
+            <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
+            <Components>
+              <Component Subtype="Tech2x" Count="2"/>
+              <Component Subtype="SteelPlate" Count="230"/>
+              <Component Subtype="Construction" Count="80"/>
+              <Component Subtype="LargeTube" Count="20"/>
+              <Component Subtype="Motor" Count="30"/>
+              <Component Subtype="Computer" Count="50"/>
+              <Component Subtype="SteelPlate" Count="150"/>
+            </Components>
+            <CriticalComponent Subtype="Computer" Index="0"/>
+            <MountPoints>
+                <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="1" EndY="1"/>
+            </MountPoints>
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.50" File="Models\Cubes\Small\GyroscopeConstruction_1.mwm"/>
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\GyroscopeConstruction_2.mwm"/>
+            </BuildProgressModels>
+            <BlockPairName>Gyroscope2x</BlockPairName>
+            <MirroringY>Z</MirroringY>
+            <MirroringZ>Y</MirroringZ>
+            <BuildTimeSeconds>21</BuildTimeSeconds>
+            <EdgeType>Light</EdgeType>
+            <PrimarySound>BlockGyroscope</PrimarySound>
+
+            <ResourceSinkGroup>Gyro</ResourceSinkGroup>
+            <ForceMagnitude>8960000</ForceMagnitude>
+            <RequiredPowerInput>0.035</RequiredPowerInput>
+
+            <DamageEffectName>Damage_HeavyMech_Damaged</DamageEffectName>
+            <DamagedSound>ParticleHeavyMech</DamagedSound>
+            <EmissiveColorPreset>Extended</EmissiveColorPreset>
+            <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
+            <DestroySound>WepSmallWarheadExpl</DestroySound>
+            <PCU>50</PCU>
+            <IsAirTight>false</IsAirTight>
+        </Definition>
+
+        <!--Large Gyro-->
+        <Definition xsi:type="MyObjectBuilder_GyroDefinition">
+            <Id>
+                <TypeId>Gyro</TypeId>
+                <SubtypeId>LargeBlockGyro2x</SubtypeId>
+            </Id>
+            <DisplayName>Enhanced Gyroscope</DisplayName>
+            <GuiVisible>false</GuiVisible>
+            <Icon>Textures\gyro2x.dds</Icon>
+            <Description>Description_Gyroscope</Description>
+            <CubeSize>Large</CubeSize>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="1" y="1" z="1"/>
+            <ModelOffset x="0" y="0" z="0"/>
+            <Model>Models\Cubes\Large\gyroscope.mwm</Model>
+            <Components>
+              <Component Subtype="Tech2x" Count="8"/>
+              <Component Subtype="SteelPlate" Count="7500"/>
+              <Component Subtype="Construction" Count="600"/>
+              <Component Subtype="LargeTube" Count="60"/>
+              <Component Subtype="MetalGrid" Count="750"/>
+              <Component Subtype="Motor" Count="60"/>
+              <Component Subtype="Computer" Count="80"/>
+              <Component Subtype="SteelPlate" Count="1500"/>
+            </Components>
+            <CriticalComponent Subtype="Computer" Index="0"/>
+            <MountPoints>
+                <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="1" EndY="1"/>
+            </MountPoints>
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\GyroscopeConstruction_1.mwm"/>
+                <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\GyroscopeConstruction_2.mwm"/>
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\GyroscopeConstruction_3.mwm"/>
+            </BuildProgressModels>
+            <BlockPairName>Gyroscope2x</BlockPairName>
+            <MirroringY>Z</MirroringY>
+            <MirroringZ>Y</MirroringZ>
+            <EdgeType>Light</EdgeType>
+            <BuildTimeSeconds>60</BuildTimeSeconds>
+            <PrimarySound>BlockGyroscope</PrimarySound>
+
+            <ResourceSinkGroup>Gyro</ResourceSinkGroup>
+            <ForceMagnitude>672000000</ForceMagnitude>
+            <RequiredPowerInput>0.0175</RequiredPowerInput>
+
+            <DamageEffectName>Damage_HeavyMech_Damaged</DamageEffectName>
+            <DamagedSound>ParticleHeavyMech</DamagedSound>
+            <EmissiveColorPreset>Extended</EmissiveColorPreset>
+            <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+            <DestroySound>WepSmallWarheadExpl</DestroySound>
+            <PCU>50</PCU>
+            <IsAirTight>false</IsAirTight>
+        </Definition>
+
+        <!--        Tier 4-->
+        <!--Small Gyro-->
+        <Definition xsi:type="MyObjectBuilder_GyroDefinition">
+            <Id>
+                <TypeId>Gyro</TypeId>
+                <SubtypeId>SmallBlockGyro4x</SubtypeId>
+            </Id>
+            <DisplayName>Proficient Gyroscope</DisplayName>
+            <GuiVisible>false</GuiVisible>
+            <Icon>Textures\gyro4x.dds</Icon>
+            <Description>Description_Gyroscope</Description>
+            <CubeSize>Small</CubeSize>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="1" y="1" z="1"/>
+            <ModelOffset x="0" y="0" z="0"/>
+            <Model>Models\Cubes\Small\gyroscope.mwm</Model>
+            <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
+            <Components>
+              <Component Subtype="TechA4x" Count="10"/>
+              <Component Subtype="TechB4x" Count="10"/>
+              <Component Subtype="SteelPlate" Count="340"/>
+              <Component Subtype="Construction" Count="120"/>
+              <Component Subtype="LargeTube" Count="30"/>
+              <Component Subtype="Motor" Count="50"/>
+              <Component Subtype="Computer" Count="70"/>
+              <Component Subtype="SteelPlate" Count="230"/>
+            </Components>
+            <CriticalComponent Subtype="Computer" Index="0"/>
+            <MountPoints>
+                <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="1" EndY="1"/>
+            </MountPoints>
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.50" File="Models\Cubes\Small\GyroscopeConstruction_1.mwm"/>
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\GyroscopeConstruction_2.mwm"/>
+            </BuildProgressModels>
+            <BlockPairName>Gyroscope4x</BlockPairName>
+            <MirroringY>Z</MirroringY>
+            <MirroringZ>Y</MirroringZ>
+            <BuildTimeSeconds>32</BuildTimeSeconds>
+            <EdgeType>Light</EdgeType>
+            <PrimarySound>BlockGyroscope</PrimarySound>
+
+            <ResourceSinkGroup>Gyro</ResourceSinkGroup>
+            <ForceMagnitude>17920000</ForceMagnitude>
+            <RequiredPowerInput>0.175</RequiredPowerInput>
+
+            <DamageEffectName>Damage_HeavyMech_Damaged</DamageEffectName>
+            <DamagedSound>ParticleHeavyMech</DamagedSound>
+            <EmissiveColorPreset>Extended</EmissiveColorPreset>
+            <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
+            <DestroySound>WepSmallWarheadExpl</DestroySound>
+            <PCU>50</PCU>
+            <IsAirTight>false</IsAirTight>
+        </Definition>
+
+        <!--Large Gyro-->
+        
+        <Definition xsi:type="MyObjectBuilder_GyroDefinition">
+            <Id>
+                <TypeId>Gyro</TypeId>
+                <SubtypeId>LargeBlockGyro4x</SubtypeId>
+            </Id>
+            <DisplayName>Proficient Gyroscope</DisplayName>
+            <GuiVisible>false</GuiVisible>
+            <Icon>Textures\gyro4x.dds</Icon>
+            <Description>Description_Gyroscope</Description>
+            <CubeSize>Large</CubeSize>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="1" y="1" z="1"/>
+            <ModelOffset x="0" y="0" z="0"/>
+            <Model>Models\Cubes\Large\gyroscope.mwm</Model>
+            <Components>
+              <Component Subtype="TechA4x" Count="40"/>
+              <Component Subtype="TechB4x" Count="40"/>
+              <Component Subtype="SteelPlate" Count="11250"/>
+              <Component Subtype="Construction" Count="900"/>
+              <Component Subtype="LargeTube" Count="90"/>
+              <Component Subtype="MetalGrid" Count="1130"/>
+              <Component Subtype="Motor" Count="90"/>
+              <Component Subtype="Computer" Count="120"/>
+              <Component Subtype="SteelPlate" Count="2250"/>
+            </Components>
+            <CriticalComponent Subtype="Computer" Index="0"/>
+            <MountPoints>
+                <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="1" EndY="1"/>
+            </MountPoints>
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\GyroscopeConstruction_1.mwm"/>
+                <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\GyroscopeConstruction_2.mwm"/>
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\GyroscopeConstruction_3.mwm"/>
+            </BuildProgressModels>
+            <BlockPairName>Gyroscope4x</BlockPairName>
+            <MirroringY>Z</MirroringY>
+            <MirroringZ>Y</MirroringZ>
+            <EdgeType>Light</EdgeType>
+            <BuildTimeSeconds>90</BuildTimeSeconds>
+            <PrimarySound>BlockGyroscope</PrimarySound>
+
+            <ResourceSinkGroup>Gyro</ResourceSinkGroup>
+            <ForceMagnitude>1344000000</ForceMagnitude>
+            <RequiredPowerInput>0.306</RequiredPowerInput>
+
+            <DamageEffectName>Damage_HeavyMech_Damaged</DamageEffectName>
+            <DamagedSound>ParticleHeavyMech</DamagedSound>
+            <EmissiveColorPreset>Extended</EmissiveColorPreset>
+            <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+            <DestroySound>WepSmallWarheadExpl</DestroySound>
+            <PCU>50</PCU>
+            <IsAirTight>false</IsAirTight>
+        </Definition>
+
+        <!--        Tier 8-->
+        <!--Small Gyro-->
+        <Definition xsi:type="MyObjectBuilder_GyroDefinition">
+            <Id>
+                <TypeId>Gyro</TypeId>
+                <SubtypeId>SmallBlockGyro8x</SubtypeId>
+            </Id>
+            <DisplayName>Elite Gyroscope</DisplayName>
+            <GuiVisible>false</GuiVisible>
+            <Icon>Textures\gyro8x.dds</Icon>
+            <Description>Description_Gyroscope</Description>
+            <CubeSize>Small</CubeSize>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="1" y="1" z="1"/>
+            <ModelOffset x="0" y="0" z="0"/>
+            <Model>Models\Cubes\Small\gyroscope.mwm</Model>
+            <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
+            <Components>
+              <Component Subtype="TechA8x" Count="15"/>
+              <Component Subtype="TechB8x" Count="15"/>
+              <Component Subtype="SteelPlate" Count="510"/>
+              <Component Subtype="Construction" Count="170"/>
+              <Component Subtype="LargeTube" Count="40"/>
+              <Component Subtype="Motor" Count="70"/>
+              <Component Subtype="Computer" Count="110"/>
+              <Component Subtype="SteelPlate" Count="340"/>
+            </Components>
+            <CriticalComponent Subtype="Computer" Index="0"/>
+            <MountPoints>
+                <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="1" EndY="1"/>
+            </MountPoints>
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.50" File="Models\Cubes\Small\GyroscopeConstruction_1.mwm"/>
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\GyroscopeConstruction_2.mwm"/>
+            </BuildProgressModels>
+            <BlockPairName>Gyroscope8x</BlockPairName>
+            <MirroringY>Z</MirroringY>
+            <MirroringZ>Y</MirroringZ>
+            <BuildTimeSeconds>48</BuildTimeSeconds>
+            <EdgeType>Light</EdgeType>
+            <PrimarySound>BlockGyroscope</PrimarySound>
+
+            <ResourceSinkGroup>Gyro</ResourceSinkGroup>
+            <ForceMagnitude>35840000</ForceMagnitude>
+            <RequiredPowerInput>0.107</RequiredPowerInput>
+
+            <DamageEffectName>Damage_HeavyMech_Damaged</DamageEffectName>
+            <DamagedSound>ParticleHeavyMech</DamagedSound>
+            <EmissiveColorPreset>Extended</EmissiveColorPreset>
+            <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
+            <DestroySound>WepSmallWarheadExpl</DestroySound>
+            <PCU>50</PCU>
+            <IsAirTight>false</IsAirTight>
+        </Definition>
+
+        <!--Large Gyro-->
+        <Definition xsi:type="MyObjectBuilder_GyroDefinition">
+            <Id>
+                <TypeId>Gyro</TypeId>
+                <SubtypeId>LargeBlockGyro8x</SubtypeId>
+            </Id>
+            <DisplayName>Elite Gyroscope</DisplayName>
+            <GuiVisible>false</GuiVisible>
+            <Icon>Textures\gyro8x.dds</Icon>
+            <Description>Description_Gyroscope</Description>
+            <CubeSize>Large</CubeSize>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="1" y="1" z="1"/>
+            <ModelOffset x="0" y="0" z="0"/>
+            <Model>Models\Cubes\Large\gyroscope.mwm</Model>
+            <Components>
+              <Component Subtype="TechA8x" Count="40"/>
+              <Component Subtype="TechB8x" Count="40"/>
+              <Component Subtype="SteelPlate" Count="16880"/>
+              <Component Subtype="Construction" Count="1350"/>
+              <Component Subtype="LargeTube" Count="140"/>
+              <Component Subtype="MetalGrid" Count="1690"/>
+              <Component Subtype="Motor" Count="140"/>
+              <Component Subtype="Computer" Count="170"/>
+              <Component Subtype="SteelPlate" Count="3380"/>
+            </Components>
+            <CriticalComponent Subtype="Computer" Index="0"/>
+            <MountPoints>
+                <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="1" EndY="1"/>
+            </MountPoints>
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\GyroscopeConstruction_1.mwm"/>
+                <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\GyroscopeConstruction_2.mwm"/>
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\GyroscopeConstruction_3.mwm"/>
+            </BuildProgressModels>
+            <BlockPairName>Gyroscope8x</BlockPairName>
+            <MirroringY>Z</MirroringY>
+            <MirroringZ>Y</MirroringZ>
+            <EdgeType>Light</EdgeType>
+            <BuildTimeSeconds>135</BuildTimeSeconds>
+            <PrimarySound>BlockGyroscope</PrimarySound>
+
+            <ResourceSinkGroup>Gyro</ResourceSinkGroup>
+            <ForceMagnitude>2688000000</ForceMagnitude>
+            <RequiredPowerInput>0.536</RequiredPowerInput>
+
+            <DamageEffectName>Damage_HeavyMech_Damaged</DamageEffectName>
+            <DamagedSound>ParticleHeavyMech</DamagedSound>
+            <EmissiveColorPreset>Extended</EmissiveColorPreset>
+            <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+            <DestroySound>WepSmallWarheadExpl</DestroySound>
+            <PCU>50</PCU>
+            <IsAirTight>false</IsAirTight>
+        </Definition>
+    </CubeBlocks>
+</Definitions>
